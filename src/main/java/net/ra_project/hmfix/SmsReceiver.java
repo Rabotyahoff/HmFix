@@ -55,6 +55,10 @@ public class SmsReceiver extends BroadcastReceiver {
 		Kartka 4102-7563 uspishna operaciya 134.86UAH 14/09 22:11 CodeShop Dostupno:652.06UAH
 		0      1         2        3         4         5     6     7        8
 
+		пополнение через терминал
+		Kartka 4102-7563 uspishna operaciya -13.86UAH 14/09 22:11 CodeShop Dostupno:652.06UAH
+		0      1         2        3         4         5     6     7        8
+
 		перевод на другую карту через myAlfabank
 		Kartka 4102-7563 uspishna operaciya 500UAH 14/09 22:11 MY ALFABANK COM UA Dostupno:652.06UAH
 		0      1         2        3         4      5     6     7  8        9   10 11
@@ -132,6 +136,12 @@ public class SmsReceiver extends BroadcastReceiver {
 						code_shop+=array_body[i];
 					}*/
 					balans_currency=array_body[last];
+				}
+
+				char c=sum_currency.charAt(0);
+				if ( c=='-' ){
+					sum_currency=sum_currency.substring(1);
+					is_add=!is_add;
 				}
 
 				if (is_ok){

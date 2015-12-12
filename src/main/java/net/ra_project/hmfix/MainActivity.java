@@ -19,6 +19,9 @@ sms send AlfaBank Kartka 4102-7563 uspishna operaciya 134.86UAH 14/09 22:11 Code
 покупка в CodeShop
 sms send 12345678 Kartka 4102-7563 uspishna operaciya 134.86UAH 14/09 22:11 CodeShop Dostupno:652.06UAH
 
+пополнение через терминал
+sms send 12345678 Kartka 4102-7563 uspishna operaciya -13.86UAH 14/09 22:11 CodeShop Dostupno:652.06UAH
+
 перевод на другую карту через myAlfabank
 sms send 12345678 Kartka 4102-7563 uspishna operaciya 500UAH 14/09 22:11 MY ALFABANK COM UA Dostupno:652.06UAH
 
